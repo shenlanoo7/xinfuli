@@ -5,11 +5,11 @@ spring:
     name: hmdp
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/hmdp?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://10.32.37.126:3306/hmdp?useSSL=false&serverTimezone=UTC
     username: root
-    password: 123456
+    password: "Iop9090."
   redis:
-    host: localhost
+    host: 10.32.37.126
     port: 6379
     lettuce:
       pool:
@@ -21,11 +21,11 @@ spring:
   jackson:
     default-property-inclusion: non_null # JSON处理时忽略非空字段
   rabbitmq:
-    host: 192.168.88.128
-    username: haopengmai
-    password: 123456
-    virtual-host: /
-    port: 15672
+    host: 10.32.37.126
+    username: admin
+    password: admin
+    virtual-host: admin
+    port: 5672
     listener:
       simple:
         concurrency: 10
